@@ -1,0 +1,33 @@
+{
+    "name": "dma/jobsearch-bundle",
+    "type": "contao-bundle",
+    "description": "dma",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Thomas Lonnemann thomas@conversoft.rocks",
+            "homepage": "https://github.com/dma/jobsearch-bundle"
+        }
+    ],
+    "require": {
+        "php": ">7.1",
+        "contao/core-bundle": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dma\\Jobsearch\\": "src"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/",
+            "src/Resources/contao/templates/"
+        ]
+    },
+    "extra": {
+        "contao-manager-plugin": "Dma\\Jobsearch\\ContaoManager\\Plugin"
+    }
+}

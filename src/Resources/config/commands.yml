@@ -1,0 +1,8 @@
+services:
+    dma.command.jobsearchbundle:
+        class: Dma\Generator\Command\DmaJobsearchBundleCommand
+        calls:
+            - ["setFramework", ["@contao.framework"]]
+        tags:
+            -  { name: console.command }
+

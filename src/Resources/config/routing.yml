@@ -1,0 +1,8 @@
+dmajobsearch_route:
+    resource: "@ContaoDmaJobsearchBundle/Controller"
+    type: annotation
+
+
+#   Add to root/app/config/routing.yml
+# dmajobsearch_route:
+#     resource: "@ContaoDmaJobsearchBundle/Resources/config/routing.yml"
